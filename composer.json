@@ -1,0 +1,28 @@
+{
+    "name": "{{cookiecutter.company}}/{{cookiecutter.name}}",
+    "description": "{{cookiecutter.description}}",
+    "keywords": ["boilerplate", "skeleton"],
+    "license": "DBAD",
+    "require": {
+        "php": "^7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "{{cookiecutter.company}}\\{{cookiecutter.namespace}}\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "{{cookiecutter.company}}\\{{cookiecutter.namespace}}\\tests\\": "tests"
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "7.2"
+        },
+        "sort-packages": true
+    }
+}
